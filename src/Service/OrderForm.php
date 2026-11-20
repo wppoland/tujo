@@ -536,8 +536,10 @@ final class OrderForm implements HasHooks
     private function currentUrl(): string
     {
         // The request URI, query string and all, so the redirect lands back on the
-        // page the form was submitted from: same pagination, same filters.
-        return home_url(add_query_arg([], ''));
+        // page the form was submitted from: same pagination, same filters. Kept
+        // root-relative: add_query_arg([], '') returned '' (the home page), and
+        // home_url() around the URI doubles the path on a subdirectory install.
+        return add_query_arg([]);
     }
 
     private function isEnabled(): bool
