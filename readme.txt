@@ -125,8 +125,9 @@ Yes. This plugin is compatible with WordPress Multisite. Network activate it or 
 
 == Screenshots ==
 
-1. The quick order form with live search and quantity inputs.
-2. The Tujo settings screen under WooCommerce.
+1. Quick order form: search, stock and quantities for many products on one page.
+2. Settings under WooCommerce > Tujo: product scope and columns.
+3. The quick order form on a phone.
 
 == External Services ==
 
